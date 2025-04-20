@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #dce35b, #45b649);
+  color: #2e3d29;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #2b512f;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #3c4f3d;
+}
+
+.habit-form,
+.log-form {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 0.6rem 1rem;
+  border: 2px solid #9cc69b;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fafff9;
+}
+
+button,
+.delete-btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: #388e3c;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.delete-btn:hover {
+  background-color: #2e7d32;
+}
+
+.habit-list {
+  list-style: none;
+  max-width: 700px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.habit-list li {
+  background-color: #ffffffcc;
+  border: 2px solid #a5d6a7;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: transform 0.2s ease;
+}
+
+.habit-list li:hover {
+  transform: scale(1.01);
+}
+
+.habit-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.streak {
+  font-size: 0.9rem;
+  color: #4a6b4a;
+}
+
+.delete-btn {
+  background-color: #d32f2f;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
+}

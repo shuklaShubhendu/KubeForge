@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Habit Garden 🌿</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1>🌱 Habit Garden - Shubhendu Shukla (2022BCD0054)</h1>
+  <h2 class="subtitle">Plant a habit. Water it daily. Watch it grow!</h2>
+
+  <form action="/add" method="POST" class="habit-form">
+    <input type="text" name="habit" placeholder="🌼 Name your habit..." required>
+    <button type="submit">➕ Plant Seed</button>
+  </form>
+
+  <ul class="habit-list">
+    {% for habit in habits %}
+      <li>
+        <div class="habit-info">
+          <strong>{{ habit.habit }}</strong><br>
+          Streak: {{ habit.streak }} days 🔥
+        </div>
+        <form action="/log/{{ habit._id }}" method="POST">
+          <button type="submit">💧 Water Today</button>
+        </form>
+        <a href="/delete/{{ habit._id }}" class="delete-btn">🗑️ Uproot</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <footer class="footer">
+    Cultivate your future, one habit at a time 🌻
+  </footer>
+</body>
+</html>
