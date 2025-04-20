@@ -116,4 +116,4 @@ This project is licensed under the **MIT License**.
 
 ---
 
-> Made with 💙 for DevOps & Cloud learners by [Shubhendu Shukla](https://github.com/yourusername)
+> Made with 💙 for DevOps & Cloud learners by [Shubhendu Shukla](https://github.com/shuklaShubhendu)
